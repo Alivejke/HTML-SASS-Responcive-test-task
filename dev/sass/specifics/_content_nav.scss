@@ -1,0 +1,46 @@
+@import "compass/css3";
+
+.content_nav {
+	max-height: 100%;
+	overflow: auto;
+	width: flex(940px, 1290px);
+	float: left;
+}
+
+.content_nav_item {
+	width: 100%;
+	border-top: 1px solid #ccc;
+	text-align: center;
+	cursor: pointer;
+	padding: em(36px) 0 em(38px);
+	@include transition(background .8s, color .2s);
+	&:first-child {
+		border-top: none;
+	}
+	&:hover {
+		background: #377db9;
+		color: $base-color-white;
+	}
+}
+
+.content_nav_item_title {
+	$font-size: 30px;
+	font-size: em($font-size);
+	line-height: em(44px, $font-size);
+	padding: 0 flex(20px, 940px);
+	font-family: $base-font-family-bold;
+	font-weight: bold;
+	letter-spacing: em(-1px, $font-size);
+}
+
+.content_nav_item_descr {
+	$font-size: 18px;
+	font-size: em($font-size);
+	line-height: em(32px, $font-size);
+	padding: 0 flex(20px, 940px);
+	letter-spacing: em(-1px, $font-size);
+}
+
+.content_nav_item_text {
+	display: none;
+}

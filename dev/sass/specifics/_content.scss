@@ -1,0 +1,54 @@
+@import "compass/css3";
+
+#content {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    width: flex(1290px);
+    float: left;
+}
+
+.page_title_block {
+    $block-width: 350px;
+    height: 100%;
+    width: flex($block-width, 1290px);
+    float: left;
+    background: #377db9;
+
+    img {
+        display: block;
+        width: flex(265px, $block-width);
+        margin: em(93px) auto em(77px);
+    }
+}
+
+.page_title {
+    $font-size: 30px;
+    font-weight: bold;
+    font-family: $base-font-family-bold;
+    font-size: em($font-size);
+    line-height: em(44px, $font-size);
+    color: $base-color-white;
+    width: flex(235px, 350px);
+    margin: 0 auto;
+    letter-spacing: em(-1px, $font-size);
+}
+
+.content_entity_wrap {
+    padding: em(66px) flex(110px, 940px);
+}
+
+.content_entity {
+    position: absolute;
+    top: 0;
+    right: - flex(940px, 1290px);
+    width: flex(940px, 1290px);
+    height: 100%;
+    background: #fff;
+    overflow: auto;
+    @include transition(right .5s);
+
+    &.open {
+        right: 0;
+    }
+}

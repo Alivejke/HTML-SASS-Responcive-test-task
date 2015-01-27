@@ -1,0 +1,17 @@
+.main_nav {
+	height: 100%;
+	width: flex(60px);
+	float: left;
+	background: #1e2326;
+}
+
+a.main_nav_item {
+	$font-size: 22px;
+	font-size: em($font-size);
+	line-height: em(78px, $font-size);
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	color: $base-color-white;
+}

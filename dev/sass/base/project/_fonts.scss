@@ -1,0 +1,4 @@
+@import "compass/css3";
+ 
+@include font-face("museo_sans300", font-files("museosans-300.eot?#iefix", "museosans-300.woff", "museosans-300.ttf", "museosans-300.svg#museo_sans300"), "museosans-300.eot", "normal", "normal");
+@include font-face("museo_sans700", font-files("museosans_700.eot?#iefix", "museosans_700.woff", "museosans_700.ttf", "museosans_700.svg#museo_sans300"), "museosans_700.eot", "normal", "normal");
